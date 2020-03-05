@@ -5,22 +5,30 @@
 
 void gitxy(int x, int y);
 void DeciToBina(int n);
-void Fonksiyonel(int n);
+void Faktoriyel(int n);
 
 using namespace std;
 
 
 
 int main(){
-    int yuppi,we=1,kisir = 0,kisir2 = 0,ou = 1;
+    
+	
+	int yuppi,we=1,kisir = 0,kisir2 = 0,ou = 1;
     int n,a,AlanX,AlanY;
     int tekrar = 35030;
     int tasiyici;
     string zerorone;
 
+// Türkçe karakter ekleme
     setlocale(LC_ALL, "Turkish");
 
+// Rastgele Sayı Oluşturma(Animasyon için).
+
     srand(time(0));
+    
+    // Animasyon
+    
     
     while (kisir < 4000) {
 
@@ -161,6 +169,11 @@ int main(){
         cout << zerorone;
 
     }
+    
+    // 	Animasyon Bitti.
+    
+    // Ana Ekran.
+    
     gitxy(10,12);
 
     while (tekrar == 35030) {
@@ -177,7 +190,7 @@ int main(){
             
             gitxy(10, 16);
 
-            cout << "Faktöriyel girmek için 10\n";  
+            cout << "Faktöriyel girmek için 2\n";  
 
             gitxy(15, 13);
 
@@ -236,16 +249,22 @@ int main(){
 
        	
 	   }
-       if(yuppi == 10){
+       if(yuppi == 2){
 	system("cls");
-	cout << "Fonksiyonel için sayı girin.\n";
+	cout << "Faktoriyel için sayı girin.\n";
 	
 	cin >> n;
 	
-	Fonksiyonel(n);
 	
-	cout << n;
 	
+	
+
+cout << endl << endl;
+
+cout << "İşte Faktoriyel ------> " ;
+	
+	
+	Faktoriyel(n);
        }
 
 
@@ -267,19 +286,22 @@ int main(){
 
 
 
-void Fonksiyonel(int n){
+void Faktoriyel(int n){
 	
-	int sayac;
+	int sayac,masumfaktoriyel;
 	
-	sayac = n;
+	sayac = 1;
 	
-	while(sayac > 0){
+	while(sayac < n){
 		
-	
-		n= n*sayac;
-		sayac--;
+		sayac = sayac + 1;
+		
+		masumfaktoriyel = sayac * masumfaktoriyel;
+		
 	}
-	
+
+cout << masumfaktoriyel;
+
 }
 
 
